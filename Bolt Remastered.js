@@ -24,5 +24,16 @@ async function startProgram() {
 	stopRoll()
 	await Sound.EightBit.Error.play(true)
 
+	// Red LED
+	setHeading(180)
+	setSpeed(33)
+	await delay(3)
+	stopRoll()
+	setHeading(220)
+	setSpeed(25)
+	await delay(3.05)
+	stopRoll()
+	setMainLed({ r: 255, g: 0, b: 0})
+
 
 }
