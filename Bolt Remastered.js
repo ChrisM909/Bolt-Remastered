@@ -9,3 +9,13 @@ async function startProgram() {
 	await scrollMatrixText('Start',{ r:255,g:0,b:255}, 30, true)
 	await speak ("Start Maze", true);
 	setMainLed ({ r:255,g:0,b:255});
+
+	// Blue LED
+	await delay(2)
+	setSpeed(100);
+	await delay(1.4)
+	stopRoll()
+	setMainLed({ r: 0, g: 0, b: 255})
+
+
+}
